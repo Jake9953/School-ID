@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f1fcfd;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: solid 8px rgb(169, 243, 209);
+  background-color: rgb(241, 252, 253);
+  height: 300px;
+  width: 550px;
+  padding: 10px;
+}
+
+.min-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40%;
+  width: 20%;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title span {
+  color: black;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  border-top: solid 2px rgba(165, 25, 15, 0.692);
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form {
+  line-height: 1.2;
+}
+
+.form span {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.igm img {
+  height: 40%;
+  width: 50%;
+}
+
+.igm {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h5 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+h5 .action {
+  text-transform: capitalize;
+  color: rgb(88, 72, 238);
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 90%;
+    height: auto;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .form {
+    font-size: 12px;
+  }
+
+  .form span {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .logo img {
+    height: 30%;
+    width: 20%;
+  }
+
+  .igm img {
+    height: 35%;
+    width: 45%;
+  }
+}
