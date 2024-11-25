@@ -1,3 +1,10 @@
+:root {
+  --main-bg-color: #f1fcfd;
+  --border-color: rgb(169, 243, 209);
+  --title-color: blue;
+  --action-color: rgb(88, 72, 238);
+}
+
 *,
 *::before,
 *::after {
@@ -10,18 +17,19 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f1fcfd;
+  background-color: var(--main-bg-color);
 }
 
 .main {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  border: solid 8px rgb(169, 243, 209);
+  border: solid 8px var(--border-color);
   background-color: rgb(241, 252, 253);
   height: 300px;
   width: 550px;
   padding: 10px;
+  transition: all 0.3s ease;
 }
 
 .min-header {
@@ -43,7 +51,7 @@ body {
 .title {
   text-align: center;
   text-transform: uppercase;
-  color: blue;
+  color: var(--title-color);
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: bold;
@@ -95,7 +103,7 @@ h5 {
 
 h5 .action {
   text-transform: capitalize;
-  color: rgb(88, 72, 238);
+  color: var(--action-color);
 }
 
 @media (max-width: 600px) {
